@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "title": "NORDIVA HOME EUROPE - Muebles Premium",
+    "description": "Descubre muebles de calidad premium para tu hogar. Sofás, mesas, sillas, camas y más."
+  },
+  "nav": {
+    "home": "Inicio",
+    "products": "Productos",
+    "about": "Nosotros",
+    "contact": "Contacto",
+    "delivery": "Entrega"
+  },
+  "hero": {
+    "title": "Muebles Premium para tu hogar",
+    "subtitle": "Descubre nuestra colección de muebles artesanales diseñados para la vida moderna",
+    "cta": "Explorar colección"
+  },
+  "categories": {
+    "title": "Nuestras Categorías",
+    "sofa": "Sofás",
+    "table": "Mesas",
+    "chair": "Sillas",
+    "coffee_table": "Mesas de centro",
+    "corner_sofa": "Sofás de esquina",
+    "dining_table": "Mesas de comedor",
+    "bed": "Camas",
+    "furniture_set": "Conjuntos de muebles"
+  },
+  "products": {
+    "title": "Nuestros Productos",
+    "viewDetails": "Ver detalles",
+    "order": "Pedir ahora",
+    "price": "Precio",
+    "contactForPrice": "Precio bajo consulta",
+    "description": "Descripción",
+    "relatedProducts": "Productos similares"
+  },
+  "order": {
+    "title": "Hacer pedido",
+    "name": "Nombre completo",
+    "phone": "Número de teléfono",
+    "address": "Dirección de entrega",
+    "city": "Ciudad",
+    "notes": "Notas",
+    "submit": "Enviar pedido",
+    "success": "¡Pedido recibido! Nos pondremos en contacto contigo pronto.",
+    "cod": "Pago contra entrega"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados",
+    "followUs": "Síguenos"
+  }
+}

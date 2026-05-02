@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "title": "NORDIVA HOME EUROPE - Premium Furniture",
+    "description": "Discover premium quality furniture for your home. Sofas, tables, chairs, beds and more."
+  },
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "about": "About",
+    "contact": "Contact",
+    "delivery": "Delivery"
+  },
+  "hero": {
+    "title": "Premium Furniture for Your Home",
+    "subtitle": "Discover our collection of handcrafted furniture designed for modern living",
+    "cta": "Explore Collection"
+  },
+  "categories": {
+    "title": "Our Categories",
+    "sofa": "Sofas",
+    "table": "Tables",
+    "chair": "Chairs",
+    "coffee_table": "Coffee Tables",
+    "corner_sofa": "Corner Sofas",
+    "dining_table": "Dining Tables",
+    "bed": "Beds",
+    "furniture_set": "Furniture Sets"
+  },
+  "products": {
+    "title": "Our Products",
+    "viewDetails": "View Details",
+    "order": "Order Now",
+    "price": "Price",
+    "contactForPrice": "Contact for Price",
+    "description": "Description",
+    "relatedProducts": "Related Products"
+  },
+  "order": {
+    "title": "Place Order",
+    "name": "Full Name",
+    "phone": "Phone Number",
+    "address": "Delivery Address",
+    "city": "City",
+    "notes": "Notes",
+    "submit": "Submit Order",
+    "success": "Order submitted successfully! We will contact you soon.",
+    "cod": "Cash on Delivery"
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "followUs": "Follow Us"
+  }
+}

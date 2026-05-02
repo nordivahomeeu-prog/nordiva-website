@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "title": "NORDIVA HOME EUROPE - Premium Mobilya",
+    "description": "Eviniz için premium kalite mobilyalar. Koltuklar, masalar, sandalyeler, yataklar ve daha fazlası."
+  },
+  "nav": {
+    "home": "Ana Sayfa",
+    "products": "Ürünler",
+    "about": "Hakkımızda",
+    "contact": "İletişim",
+    "delivery": "Teslimat"
+  },
+  "hero": {
+    "title": "Eviniz için Premium Mobilya",
+    "subtitle": "Modern yaşam için tasarlanmış, el işçiliği mobilya koleksiyonumuzu keşfedin",
+    "cta": "Koleksiyonu Keşfet"
+  },
+  "categories": {
+    "title": "Kategorilerimiz",
+    "sofa": "Koltuklar",
+    "table": "Masalar",
+    "chair": "Sandalyeler",
+    "coffee_table": "Sehpalar",
+    "corner_sofa": "Köşe Koltuklar",
+    "dining_table": "Yemek Masaları",
+    "bed": "Yataklar",
+    "furniture_set": "Mobilya Takımları"
+  },
+  "products": {
+    "title": "Ürünlerimiz",
+    "viewDetails": "Detayları Gör",
+    "order": "Sipariş Ver",
+    "price": "Fiyat",
+    "contactForPrice": "Fiyat için iletişime geçin",
+    "description": "Açıklama",
+    "relatedProducts": "Benzer Ürünler"
+  },
+  "order": {
+    "title": "Sipariş Ver",
+    "name": "Ad Soyad",
+    "phone": "Telefon Numarası",
+    "address": "Teslimat Adresi",
+    "city": "Şehir",
+    "notes": "Notlar",
+    "submit": "Sipariş Gönder",
+    "success": "Siparişiniz alındı! En kısa sürede size ulaşacağız.",
+    "cod": "Kapıda Ödeme"
+  },
+  "footer": {
+    "rights": "Tüm hakları saklıdır",
+    "followUs": "Bizi Takip Edin"
+  }
+}

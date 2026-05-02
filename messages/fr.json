@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "title": "NORDIVA HOME EUROPE - Meubles Premium",
+    "description": "Découvrez des meubles de qualité premium pour votre maison. Canapés, tables, chaises, lits et plus."
+  },
+  "nav": {
+    "home": "Accueil",
+    "products": "Produits",
+    "about": "À propos",
+    "contact": "Contact",
+    "delivery": "Livraison"
+  },
+  "hero": {
+    "title": "Meubles Premium pour votre maison",
+    "subtitle": "Découvrez notre collection de meubles artisanaux conçus pour la vie moderne",
+    "cta": "Découvrir la collection"
+  },
+  "categories": {
+    "title": "Nos Catégories",
+    "sofa": "Canapés",
+    "table": "Tables",
+    "chair": "Chaises",
+    "coffee_table": "Tables basses",
+    "corner_sofa": "Canapés d'angle",
+    "dining_table": "Tables à manger",
+    "bed": "Lits",
+    "furniture_set": "Ensembles de meubles"
+  },
+  "products": {
+    "title": "Nos Produits",
+    "viewDetails": "Voir les détails",
+    "order": "Commander",
+    "price": "Prix",
+    "contactForPrice": "Prix sur demande",
+    "description": "Description",
+    "relatedProducts": "Produits similaires"
+  },
+  "order": {
+    "title": "Passer commande",
+    "name": "Nom complet",
+    "phone": "Numéro de téléphone",
+    "address": "Adresse de livraison",
+    "city": "Ville",
+    "notes": "Notes",
+    "submit": "Envoyer la commande",
+    "success": "Commande reçue ! Nous vous contacterons bientôt.",
+    "cod": "Paiement à la livraison"
+  },
+  "footer": {
+    "rights": "Tous droits réservés",
+    "followUs": "Suivez-nous"
+  }
+}

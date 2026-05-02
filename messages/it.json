@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "title": "NORDIVA HOME EUROPE - Mobili Premium",
+    "description": "Scopri mobili di qualità premium per la tua casa. Divani, tavoli, sedie, letti e altro."
+  },
+  "nav": {
+    "home": "Home",
+    "products": "Prodotti",
+    "about": "Chi siamo",
+    "contact": "Contatti",
+    "delivery": "Consegna"
+  },
+  "hero": {
+    "title": "Mobili Premium per la tua casa",
+    "subtitle": "Scopri la nostra collezione di mobili artigianali per la vita moderna",
+    "cta": "Esplora la collezione"
+  },
+  "categories": {
+    "title": "Le nostre Categorie",
+    "sofa": "Divani",
+    "table": "Tavoli",
+    "chair": "Sedie",
+    "coffee_table": "Tavolini",
+    "corner_sofa": "Divani angolari",
+    "dining_table": "Tavoli da pranzo",
+    "bed": "Letti",
+    "furniture_set": "Set di mobili"
+  },
+  "products": {
+    "title": "I nostri Prodotti",
+    "viewDetails": "Vedi dettagli",
+    "order": "Ordina ora",
+    "price": "Prezzo",
+    "contactForPrice": "Prezzo su richiesta",
+    "description": "Descrizione",
+    "relatedProducts": "Prodotti simili"
+  },
+  "order": {
+    "title": "Effettua ordine",
+    "name": "Nome completo",
+    "phone": "Numero di telefono",
+    "address": "Indirizzo di consegna",
+    "city": "Città",
+    "notes": "Note",
+    "submit": "Invia ordine",
+    "success": "Ordine ricevuto! Ti contatteremo presto.",
+    "cod": "Pagamento alla consegna"
+  },
+  "footer": {
+    "rights": "Tutti i diritti riservati",
+    "followUs": "Seguici"
+  }
+}

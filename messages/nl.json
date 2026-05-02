@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "title": "NORDIVA HOME EUROPE - Premium Meubelen",
+    "description": "Ontdek hoogwaardige meubelen voor uw huis. Banken, tafels, stoelen, bedden en meer."
+  },
+  "nav": {
+    "home": "Home",
+    "products": "Producten",
+    "about": "Over ons",
+    "contact": "Contact",
+    "delivery": "Levering"
+  },
+  "hero": {
+    "title": "Premium Meubelen voor uw huis",
+    "subtitle": "Ontdek onze collectie handgemaakte meubelen voor modern wonen",
+    "cta": "Collectie verkennen"
+  },
+  "categories": {
+    "title": "Onze Categorieën",
+    "sofa": "Banken",
+    "table": "Tafels",
+    "chair": "Stoelen",
+    "coffee_table": "Salontafels",
+    "corner_sofa": "Hoekbanken",
+    "dining_table": "Eettafels",
+    "bed": "Bedden",
+    "furniture_set": "Meubelsets"
+  },
+  "products": {
+    "title": "Onze Producten",
+    "viewDetails": "Details bekijken",
+    "order": "Nu bestellen",
+    "price": "Prijs",
+    "contactForPrice": "Prijs op aanvraag",
+    "description": "Beschrijving",
+    "relatedProducts": "Vergelijkbare producten"
+  },
+  "order": {
+    "title": "Bestelling plaatsen",
+    "name": "Volledige naam",
+    "phone": "Telefoonnummer",
+    "address": "Bezorgadres",
+    "city": "Stad",
+    "notes": "Opmerkingen",
+    "submit": "Bestelling verzenden",
+    "success": "Bestelling ontvangen! We nemen binnenkort contact met u op.",
+    "cod": "Onder rembours"
+  },
+  "footer": {
+    "rights": "Alle rechten voorbehouden",
+    "followUs": "Volg ons"
+  }
+}

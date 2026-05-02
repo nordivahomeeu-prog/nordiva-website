@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "title": "NORDIVA HOME EUROPE - Premium Möbel",
+    "description": "Entdecken Sie hochwertige Möbel für Ihr Zuhause. Sofas, Tische, Stühle, Betten und mehr."
+  },
+  "nav": {
+    "home": "Startseite",
+    "products": "Produkte",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "delivery": "Lieferung"
+  },
+  "hero": {
+    "title": "Premium Möbel für Ihr Zuhause",
+    "subtitle": "Entdecken Sie unsere Kollektion handgefertigter Möbel für modernes Wohnen",
+    "cta": "Kollektion entdecken"
+  },
+  "categories": {
+    "title": "Unsere Kategorien",
+    "sofa": "Sofas",
+    "table": "Tische",
+    "chair": "Stühle",
+    "coffee_table": "Couchtische",
+    "corner_sofa": "Ecksofas",
+    "dining_table": "Esstische",
+    "bed": "Betten",
+    "furniture_set": "Möbelsets"
+  },
+  "products": {
+    "title": "Unsere Produkte",
+    "viewDetails": "Details ansehen",
+    "order": "Jetzt bestellen",
+    "price": "Preis",
+    "contactForPrice": "Preis auf Anfrage",
+    "description": "Beschreibung",
+    "relatedProducts": "Ähnliche Produkte"
+  },
+  "order": {
+    "title": "Bestellung aufgeben",
+    "name": "Vollständiger Name",
+    "phone": "Telefonnummer",
+    "address": "Lieferadresse",
+    "city": "Stadt",
+    "notes": "Anmerkungen",
+    "submit": "Bestellung senden",
+    "success": "Bestellung erfolgreich! Wir werden uns bald bei Ihnen melden.",
+    "cod": "Nachnahme"
+  },
+  "footer": {
+    "rights": "Alle Rechte vorbehalten",
+    "followUs": "Folgen Sie uns"
+  }
+}
