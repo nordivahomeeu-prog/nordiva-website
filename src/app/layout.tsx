@@ -2,8 +2,8 @@ import type {Metadata} from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'NORDIVA HOME EUROPE',
-  description: 'Premium Furniture for Your Home',
+  title: 'NORDIVA HOME EUROPE - Premium Furniture',
+  description: 'Premium furniture for your home. Sofas, tables, chairs, beds and more.',
 };
 
 export default function RootLayout({
