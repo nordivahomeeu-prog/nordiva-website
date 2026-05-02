@@ -1,20 +1,30 @@
 import type {Metadata} from 'next';
-import {NextIntlClientProvider} from 'next-intl';
-import {getMessages} from 'next-intl/server';
 import {notFound} from 'next/navigation';
-import {routing} from '@/i18n/routing';
-import {getDirection} from '@/i18n/utils';
 import '../globals.css';
 
+const locales = ['en', 'de', 'fr', 'ar', 'it', 'es', 'nl'];
+
+const messages: Record<string, any> = {
+  en: () => import('../../../messages/en.json'),
+  de: () => import('../../../messages/de.json'),
+  fr: () => import('../../../messages/fr.json'),
+  ar: () => import('../../../messages/ar.json'),
+  it: () => import('../../../messages/it.json'),
+  es: () => import('../../../messages/es.json'),
+  nl: () => import('../../../messages/nl.json'),
+};
+
+const getDirection = (locale: string) => locale === 'ar' ? 'rtl' : 'ltr';
+
 export async function generateStaticParams() {
-  return routing.locales.map((locale) => ({locale}));
+  return locales.map((locale) => ({locale}));
 }
 
 export async function generateMetadata({params: {locale}}: {params: {locale: string}}): Promise<Metadata> {
-  const messages = await getMessages({locale});
+  const msg = await messages[locale]?.() || await messages.en();
   return {
-    title: (messages as any).metadata?.title || 'NORDIVA HOME EUROPE',
-    description: (messages as any).metadata?.description || 'Premium Furniture',
+    title: msg.default.metadata?.title || 'NORDIVA HOME EUROPE',
+    description: msg.default.metadata?.description || 'Premium Furniture',
   };
 }
 
@@ -25,19 +35,16 @@ export default async function LocaleLayout({
   children: React.ReactNode;
   params: {locale: string};
 }) {
-  if (!routing.locales.includes(locale as any)) {
+  if (!locales.includes(locale)) {
     notFound();
   }
 
-  const messages = await getMessages();
-  const direction = getDirection(locale as any);
+  const direction = getDirection(locale);
 
   return (
     <html lang={locale} dir={direction}>
       <body className="antialiased min-h-screen bg-stone-50">
-        <NextIntlClientProvider messages={messages} locale={locale}>
-          {children}
-        </NextIntlClientProvider>
+        {children}
       </body>
     </html>
   );
