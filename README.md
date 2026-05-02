@@ -99,3 +99,5 @@ src/
 ---
 
 *Bu proje Next.js ile oluşturulmuştur.*
+
+**Canlı Site:** https://nordivahomeurope.com
