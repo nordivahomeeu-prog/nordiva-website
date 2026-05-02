@@ -1,12 +1,10 @@
-import {getTranslations} from 'next-intl/server';
 import Navigation from '@/components/Navigation';
 import Hero from '@/components/Hero';
 import CategoryGrid from '@/components/CategoryGrid';
 import {getProducts} from '@/lib/api';
 import ProductCard from '@/components/ProductCard';
 
-export default async function HomePage({params: {locale}}: {params: {locale: string}}) {
-  const t = await getTranslations('products');
+export default async function HomePage() {
   const products = await getProducts();
   const featuredProducts = products.slice(0, 4);
 

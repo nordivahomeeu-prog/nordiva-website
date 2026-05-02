@@ -1,6 +1,5 @@
 'use client';
 
-import {useTranslations} from 'next-intl';
 import Navigation from '@/components/Navigation';
 import ProductCard from '@/components/ProductCard';
 import {ProductCategory, categoryLabels} from '@/lib/types';
@@ -9,9 +8,24 @@ import {useSearchParams} from 'next/navigation';
 import {useEffect, useState} from 'react';
 import {Product} from '@/lib/types';
 
+// Client-side translations
+const translations = {
+  products: {
+    title: 'Our Products',
+  },
+  categories: {
+    sofa: 'Sofas',
+    table: 'Tables',
+    chair: 'Chairs',
+    coffee_table: 'Coffee Tables',
+    corner_sofa: 'Corner Sofas',
+    dining_table: 'Dining Tables',
+    bed: 'Beds',
+    furniture_set: 'Furniture Sets',
+  }
+};
+
 export default function ProductsContent() {
-  const t = useTranslations('products');
-  const ct = useTranslations('categories');
   const searchParams = useSearchParams();
   const category = searchParams.get('category') as ProductCategory | null;
   
@@ -49,7 +63,7 @@ export default function ProductsContent() {
       <Navigation />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <h1 className="text-3xl font-bold text-stone-900 mb-8">{t('title')}</h1>
+        <h1 className="text-3xl font-bold text-stone-900 mb-8">{translations.products.title}</h1>
 
         {/* Category Filter */}
         <div className="flex flex-wrap gap-2 mb-8">
@@ -73,7 +87,7 @@ export default function ProductsContent() {
                   : 'bg-white text-stone-700 hover:bg-stone-100 border border-stone-200'
               }`}
             >
-              {ct(cat) || categoryLabels[cat]}
+              {translations.categories[cat] || categoryLabels[cat]}
             </Link>
           ))}
         </div>

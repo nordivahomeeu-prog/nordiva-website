@@ -1,26 +1,36 @@
 'use client';
 
-import {useTranslations, useLocale} from 'next-intl';
 import Link from 'next/link';
 import {usePathname} from 'next/navigation';
-import {locales} from '@/i18n/config';
+
+const locales = ['en', 'de', 'fr', 'ar', 'it', 'es', 'nl'];
+
+const navTranslations: Record<string, Record<string, string>> = {
+  en: { home: 'Home', products: 'Products', about: 'About', contact: 'Contact', delivery: 'Delivery' },
+  de: { home: 'Startseite', products: 'Produkte', about: 'Über uns', contact: 'Kontakt', delivery: 'Lieferung' },
+  fr: { home: 'Accueil', products: 'Produits', about: 'À propos', contact: 'Contact', delivery: 'Livraison' },
+  it: { home: 'Home', products: 'Prodotti', about: 'Chi siamo', contact: 'Contatti', delivery: 'Consegna' },
+  es: { home: 'Inicio', products: 'Productos', about: 'Nosotros', contact: 'Contacto', delivery: 'Entrega' },
+  nl: { home: 'Home', products: 'Producten', about: 'Over ons', contact: 'Contact', delivery: 'Levering' },
+  ar: { home: 'الرئيسية', products: 'المنتجات', about: 'من نحن', contact: 'اتصل بنا', delivery: 'التوصيل' },
+};
 
 export default function Navigation() {
-  const t = useTranslations('nav');
-  const locale = useLocale();
   const pathname = usePathname();
+  const locale = pathname.split('/')[1] || 'en';
+  const t = navTranslations[locale] || navTranslations.en;
 
   const navItems = [
-    {href: '/', label: t('home')},
-    {href: '/products', label: t('products')},
-    {href: '/about', label: t('about')},
-    {href: '/contact', label: t('contact')},
-    {href: '/delivery', label: t('delivery')},
+    {href: '/', label: t.home},
+    {href: '/products', label: t.products},
+    {href: '/about', label: t.about},
+    {href: '/contact', label: t.contact},
+    {href: '/delivery', label: t.delivery},
   ];
 
   const switchLocale = (newLocale: string) => {
-    const newPath = pathname.replace(`/${locale}`, `/${newLocale}`);
-    return newPath || `/${newLocale}`;
+    const pathWithoutLocale = pathname.replace(/^\/[a-z]{2}/, '') || '/';
+    return `/${newLocale}${pathWithoutLocale}`;
   };
 
   return (

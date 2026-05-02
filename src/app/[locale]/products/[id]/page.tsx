@@ -3,7 +3,6 @@ import Link from 'next/link';
 import {notFound} from 'next/navigation';
 import Navigation from '@/components/Navigation';
 import {getProduct, getProducts} from '@/lib/api';
-import {getTranslations} from 'next-intl/server';
 
 interface ProductPageProps {
   params: {locale: string; id: string};
@@ -19,9 +18,6 @@ export async function generateStaticParams() {
 }
 
 export default async function ProductPage({params}: ProductPageProps) {
-  const t = await getTranslations('products');
-  const ot = await getTranslations('order');
-  
   let product;
   try {
     product = await getProduct(params.id);
@@ -31,7 +27,7 @@ export default async function ProductPage({params}: ProductPageProps) {
 
   const formatPrice = (price: string, currency: string) => {
     const num = parseFloat(price);
-    if (num === 0) return ot('contactForPrice');
+    if (num === 0) return 'Contact for Price';
     return `${num.toLocaleString()} ${currency}`;
   };
 
@@ -75,7 +71,7 @@ export default async function ProductPage({params}: ProductPageProps) {
             </div>
 
             <div>
-              <h2 className="text-lg font-medium text-stone-900 mb-2">{t('description')}</h2>
+              <h2 className="text-lg font-medium text-stone-900 mb-2">Description</h2>
               <div 
                 className="text-stone-600 prose prose-stone max-w-none"
                 dangerouslySetInnerHTML={{__html: product.description}}
@@ -84,7 +80,7 @@ export default async function ProductPage({params}: ProductPageProps) {
 
             {/* Order Buttons */}
             <div className="space-y-3 pt-6 border-t border-stone-200">
-              <p className="text-sm text-stone-500 mb-3">{ot('cod')}</p>
+              <p className="text-sm text-stone-500 mb-3">Cash on Delivery</p>
               
               <a
                 href={whatsappLink}

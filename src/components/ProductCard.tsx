@@ -2,7 +2,6 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import {useTranslations} from 'next-intl';
 import {Product} from '@/lib/types';
 
 interface ProductCardProps {
@@ -10,11 +9,9 @@ interface ProductCardProps {
 }
 
 export default function ProductCard({product}: ProductCardProps) {
-  const t = useTranslations('products');
-
   const formatPrice = (price: string, currency: string) => {
     const num = parseFloat(price);
-    if (num === 0) return t('contactForPrice');
+    if (num === 0) return 'Contact for Price';
     return `${num.toLocaleString()} ${currency}`;
   };
 
@@ -48,7 +45,7 @@ export default function ProductCard({product}: ProductCardProps) {
             href={`/products/${product.id}`}
             className="text-sm text-stone-600 hover:text-stone-900 underline"
           >
-            {t('viewDetails')}
+            View Details
           </Link>
         </div>
       </div>
