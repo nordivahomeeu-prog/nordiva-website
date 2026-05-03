@@ -1,6 +1,4 @@
-export const config = {
-  runtime: 'edge',
-};
+export const runtime = 'edge';
 
 export default async function handler(req: Request) {
   const url = 'https://web-production-3807a.up.railway.app/api/products';
