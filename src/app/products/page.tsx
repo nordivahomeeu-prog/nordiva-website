@@ -19,8 +19,8 @@ function ProductsContent() {
     async function fetchProducts() {
       setLoading(true);
       const url = category 
-        ? `https://web-production-3807a.up.railway.app/api/products?category=${category}`
-        : 'https://web-production-3807a.up.railway.app/api/products';
+        ? `/api/products?category=${category}`
+        : '/api/products';
       
       try {
         const res = await fetch(url);

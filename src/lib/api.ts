@@ -3,7 +3,9 @@ import {Product} from './types';
 const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'https://web-production-3807a.up.railway.app';
 
 export async function getProducts(category?: string): Promise<Product[]> {
-  const url = new URL(`${API_BASE}/api/products`);
+  // Use relative URL for client-side, absolute for server-side
+  const baseUrl = typeof window === 'undefined' ? API_BASE : '';
+  const url = new URL(`${baseUrl}/api/products`);
   if (category) {
     url.searchParams.set('category', category);
   }
