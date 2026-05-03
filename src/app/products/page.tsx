@@ -24,8 +24,10 @@ function ProductsContent() {
       
       try {
         const res = await fetch(url);
+        console.log('Response status:', res.status);
         const data = await res.json();
-        setProducts(data);
+        console.log('Products data:', data);
+        setProducts(Array.isArray(data) ? data : []);
       } catch (error) {
         console.error('Failed to fetch products:', error);
         setProducts([]);
